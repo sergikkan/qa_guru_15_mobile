@@ -17,8 +17,9 @@ public class SelenideSearchTests extends TestBase {
     @Test
     void successSearchTest() {
         step("Нажимаем на поиск", () -> {
-                    $(AppiumBy.accessibilityId("Search Wikipedia")).click();
-                });
+            $(AppiumBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click();
+            $(AppiumBy.accessibilityId("Search Wikipedia")).click();
+        });
         step("Вводим поисковый запрос", () ->{
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Java");
         });
