@@ -3,7 +3,6 @@ package org.skan.tests.android.browserstack_sample;
 import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.Test;
-import org.skan.tests.TestBase;
 
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;

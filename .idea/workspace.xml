@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06bc826b-587b-4cb6-a95d-a92a5e1e8c02" name="Changes" comment="added browserstack tests">
+    <list default="true" id="06bc826b-587b-4cb6-a95d-a92a5e1e8c02" name="Changes" comment="added added changes in successSearch test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skan/drivers/MobileDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skan/tests/android/local/SelenideSearchTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skan/tests/android/local/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/app-alpha-universal-release.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skan/drivers/BrowserstackMobileDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skan/drivers/BrowserstackMobileDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skan/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skan/tests/android/browserstack_sample/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skan/tests/android/browserstack_sample/SelenideSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skan/tests/android/browserstack_sample/SelenideSearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +64,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -67,15 +80,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/Users/bzangar/Documents/IdeaProjects/qa_guru/qa_guru_15_mobile/src/test/resources&quot;
+  }
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.skan.tests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.skan.tests.android.local" />
       <recent name="org.skan.helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SelenideSearchTests.openNewsTest">
+  <component name="RunManager" selected="Gradle.SelenideSearchTests.successSearchTest (1)">
     <configuration name="SelenideSearchTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -90,6 +112,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.skan.tests.android.browserstack_sample.SelenideSearchTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SelenideSearchTests.openNewsTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.skan.tests.android.local.SelenideSearchTests.openNewsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,30 +180,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.skan.tests.android.browserstack_sample.SelenideSearchTests.successSearchTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SeleniumSearchTests.successSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.skan.tests.android.browserstack_sample.SeleniumSearchTests.successSearchTest&quot;" />
+            <option value="&quot;org.skan.tests.android.local.SelenideSearchTests.successSearchTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SelenideSearchTests.successSearchTest (1)" />
+        <item itemvalue="Gradle.SelenideSearchTests.openNewsTest (1)" />
         <item itemvalue="Gradle.SelenideSearchTests.openNewsTest" />
         <item itemvalue="Gradle.qa_guru_15_mobile [allureServe]" />
         <item itemvalue="Gradle.SelenideSearchTests" />
-        <item itemvalue="Gradle.SelenideSearchTests.successSearchTest (1)" />
-        <item itemvalue="Gradle.SeleniumSearchTests.successSearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672842178499</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added added changes in successSearch test">
+      <created>1672843031981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672843031981</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +260,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added browserstack tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added browserstack tests" />
+    <MESSAGE value="added added changes in successSearch test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added added changes in successSearch test" />
   </component>
 </project>
