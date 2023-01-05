@@ -2,14 +2,18 @@ package org.skan.drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
 import lombok.SneakyThrows;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.skan.config.BrowserstackConfig;
 
 import java.net.URL;
 
 public class BrowserstackMobileDriver implements WebDriverProvider {
+
+    static BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class, System.getProperties());
 
     @SneakyThrows
     @Override
@@ -18,15 +22,15 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         mutableCapabilities.merge(capabilities);
 
         // Set your access credentials
-        mutableCapabilities.setCapability("browserstack.user", "serhii_DarJRT");
-        mutableCapabilities.setCapability("browserstack.key", "vj2zyqmysYxh4Yktt9PM");
+        mutableCapabilities.setCapability("browserstack.user", config.browserstackUser());
+        mutableCapabilities.setCapability("browserstack.key", config.browserstackKey());
 
         // Set URL of the application under test
-        mutableCapabilities.setCapability("app", "bs://4689349df34cbfe8500dae1cfbae9a0d4e3e3b9f");
+        mutableCapabilities.setCapability("app", config.app());
 
         // Specify device and os_version for testing
-        mutableCapabilities.setCapability("device", "Google Pixel 3 XL");
-        mutableCapabilities.setCapability("os_version", "9.0");
+        mutableCapabilities.setCapability("device", config.device());
+        mutableCapabilities.setCapability("os_version", config.osVersion());
 
         // Set other BrowserStack capabilities
         mutableCapabilities.setCapability("project", "First Java Project");
